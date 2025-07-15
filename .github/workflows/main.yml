@@ -10,7 +10,7 @@ jobs:
       - uses: action/checkout@v3
 
       - name: Runing a sample github action
-      - run: echo "This workflow run successfully"
+        run: echo "This workflow run successfully"
       
       
       
