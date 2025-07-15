@@ -1,0 +1,4 @@
+exclude_paths:
+  - main.py
+  - .github/
+  - README.md
