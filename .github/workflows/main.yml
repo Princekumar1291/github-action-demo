@@ -1,16 +1,20 @@
-name: first workflow
+name: Linting python code
 
 on: push
 
 jobs:
-  build: 
+  python-linting-code:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Super-Linter
+        uses: super-linter/super-linter@v7.4.0
+        # env:
+        #   DEFAULT_BRANCH: main
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Running a sample GitHub Action
         run: echo "This workflow ran successfully"
-
-      - name: Simulating error
-        run: echo "error taking place"
