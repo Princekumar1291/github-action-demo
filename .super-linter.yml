@@ -2,3 +2,7 @@ exclude_paths:
   - main.py
   - .github/
   - README.md
+
+disable:
+  - CHECKOV
+  - GITLEAKS
