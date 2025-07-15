@@ -12,9 +12,9 @@ jobs:
 
       - name: Super-Linter
         uses: super-linter/super-linter@v7.4.0
-        # env:
-        #   DEFAULT_BRANCH: main
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Running a sample GitHub Action
         run: echo "This workflow ran successfully"
